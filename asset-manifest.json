@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/give-away-stuff/index.html/static/css/main.bd7b0e92.chunk.css",
-    "main.js": "/give-away-stuff/index.html/static/js/main.d8630291.chunk.js",
-    "main.js.map": "/give-away-stuff/index.html/static/js/main.d8630291.chunk.js.map",
-    "runtime~main.js": "/give-away-stuff/index.html/static/js/runtime~main.020c1a3d.js",
-    "runtime~main.js.map": "/give-away-stuff/index.html/static/js/runtime~main.020c1a3d.js.map",
-    "static/js/2.61920ca0.chunk.js": "/give-away-stuff/index.html/static/js/2.61920ca0.chunk.js",
-    "static/js/2.61920ca0.chunk.js.map": "/give-away-stuff/index.html/static/js/2.61920ca0.chunk.js.map",
-    "index.html": "/give-away-stuff/index.html/index.html",
-    "precache-manifest.a321abafc446a1078165a6887588ecd6.js": "/give-away-stuff/index.html/precache-manifest.a321abafc446a1078165a6887588ecd6.js",
-    "service-worker.js": "/give-away-stuff/index.html/service-worker.js",
-    "static/css/main.bd7b0e92.chunk.css.map": "/give-away-stuff/index.html/static/css/main.bd7b0e92.chunk.css.map",
-    "static/media/about.jpg": "/give-away-stuff/index.html/static/media/about.0e48fc7f.jpg",
-    "static/media/main.scss": "/give-away-stuff/index.html/static/media/header_start_img.2c60c6fe.jpg",
-    "static/media/light-bulb.png": "/give-away-stuff/index.html/static/media/light-bulb.d4800bf3.png",
-    "static/media/product.png": "/give-away-stuff/index.html/static/media/product.4de872e5.png",
-    "static/media/signature.png": "/give-away-stuff/index.html/static/media/signature.4468c44d.png",
-    "static/media/skills.png": "/give-away-stuff/index.html/static/media/skills.8d278327.png"
+    "main.css": "/give-away-stuff/give-away-stuff/index.html/static/css/main.d25b9294.chunk.css",
+    "main.js": "/give-away-stuff/give-away-stuff/index.html/static/js/main.c84bb405.chunk.js",
+    "main.js.map": "/give-away-stuff/give-away-stuff/index.html/static/js/main.c84bb405.chunk.js.map",
+    "runtime~main.js": "/give-away-stuff/give-away-stuff/index.html/static/js/runtime~main.7cfb0b09.js",
+    "runtime~main.js.map": "/give-away-stuff/give-away-stuff/index.html/static/js/runtime~main.7cfb0b09.js.map",
+    "static/js/2.61920ca0.chunk.js": "/give-away-stuff/give-away-stuff/index.html/static/js/2.61920ca0.chunk.js",
+    "static/js/2.61920ca0.chunk.js.map": "/give-away-stuff/give-away-stuff/index.html/static/js/2.61920ca0.chunk.js.map",
+    "index.html": "/give-away-stuff/give-away-stuff/index.html/index.html",
+    "precache-manifest.9260c757b9af3531ebe7d097fdfba8a7.js": "/give-away-stuff/give-away-stuff/index.html/precache-manifest.9260c757b9af3531ebe7d097fdfba8a7.js",
+    "service-worker.js": "/give-away-stuff/give-away-stuff/index.html/service-worker.js",
+    "static/css/main.d25b9294.chunk.css.map": "/give-away-stuff/give-away-stuff/index.html/static/css/main.d25b9294.chunk.css.map",
+    "static/media/about.jpg": "/give-away-stuff/give-away-stuff/index.html/static/media/about.0e48fc7f.jpg",
+    "static/media/main.scss": "/give-away-stuff/give-away-stuff/index.html/static/media/header_start_img.2c60c6fe.jpg",
+    "static/media/light-bulb.png": "/give-away-stuff/give-away-stuff/index.html/static/media/light-bulb.d4800bf3.png",
+    "static/media/product.png": "/give-away-stuff/give-away-stuff/index.html/static/media/product.4de872e5.png",
+    "static/media/signature.png": "/give-away-stuff/give-away-stuff/index.html/static/media/signature.4468c44d.png",
+    "static/media/skills.png": "/give-away-stuff/give-away-stuff/index.html/static/media/skills.8d278327.png"
   }
 }
