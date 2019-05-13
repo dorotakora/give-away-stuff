@@ -116,7 +116,8 @@ class Organizations extends React.Component {
                 name: 'Fundacja "Dbam o Zdrowie"',
                 mission: 'Pomoc osobom znajdującym sie w trudnej sytuacji życiowej',
                 collectionOfThings: 'ubrania, jedzenie, spręt AGD, meble, zabawki'}
-        ]
+        ],
+        currentPage: 1,
     };
 
     handleChooseOrganizations = () => {
@@ -151,7 +152,7 @@ class Organizations extends React.Component {
                         <p>W naszej bazie znajdziesz listę zweryfikowanych Fundacji z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</p>
                     </div>
                 </div>
-                    <Pagination names={this.state.names}/>
+                    <Pagination names={this.state.names} currentPage={this.state.currentPage}/>
             </section>
         )
     }
