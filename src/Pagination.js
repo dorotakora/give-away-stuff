@@ -2,52 +2,20 @@ import  React from 'react';
 
 class Pagination extends React.Component {
 
-    constructor() {
-        super();
-        this.state = {
-            names: [
-                {
-                    name: 'Fundacja "Dbam o Zdrowie"',
-                    mission: 'Pomoc osobom znajdującym sie w trudnej sytuacji życiowej',
-                collectionOfThings: 'ubrania, jedzenie, spręt AGD, meble, zabawki'},
-                {
-                    name: 'Fundacja "Dla dzieci"',
-                    mission: 'Pomoc dzieciom z ubogich rodzin',
-                    collectionOfThings: 'ubrania, meble, zabawki'},
-                {
-                    name: 'Fundacja "Bez domu"',
-                    mission: 'Pomoc dla osób nie posiadających miejsca zamieszkania',
-                    collectionOfThings: 'ubrania, jedzenie, ciepłe koce'},
-                {
-                    name: 'Fundacja "Dbam o Zdrowie"',
-                    mission: 'Pomoc osobom znajdującym sie w trudnej sytuacji życiowej',
-                    collectionOfThings: 'ubrania, jedzenie, spręt AGD, meble, zabawki'},
-                {
-                    name: 'Fundacja "Dla dzieci"',
-                    mission: 'Pomoc dzieciom z ubogich rodzin',
-                    collectionOfThings: 'ubrania, meble, zabawki'},
-                {
-                    name: 'Fundacja "Bez domu"',
-                    mission: 'Pomoc dla osób nie posiadających miejsca zamieszkania',
-                    collectionOfThings: 'ubrania, jedzenie, ciepłe koce'},
-                {
-                    name: 'Fundacja "Dbam o Zdrowie"',
-                    mission: 'Pomoc osobom znajdującym sie w trudnej sytuacji życiowej',
-                    collectionOfThings: 'ubrania, jedzenie, spręt AGD, meble, zabawki'},
-            ],
+        state = {
             currentPage: 1,
             namesPerPage: 3
-        }
-    }
+        };
 
     handleClick = (e, i) => {
-        this.setState({
-            currentPage: i
-        })
+            this.setState({
+                currentPage: i
+            })
     };
 
     render() {
-        const {names, currentPage, namesPerPage} = this.state;
+        const {names} = this.props;
+        const  {currentPage, namesPerPage} = this.state;
 
         const indexOfLast = currentPage * namesPerPage;
         const indexOfFirst = indexOfLast - namesPerPage;
