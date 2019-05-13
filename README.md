@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can see this project: https://dorotakora.github.io/give-away-stuff/
 
 ## Available Scripts
 
