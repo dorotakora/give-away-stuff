@@ -116,28 +116,24 @@ class Organizations extends React.Component {
                 name: 'Fundacja "Dbam o Zdrowie"',
                 mission: 'Pomoc osobom znajdującym sie w trudnej sytuacji życiowej',
                 collectionOfThings: 'ubrania, jedzenie, spręt AGD, meble, zabawki'}
-        ],
-        currentPage: 1
+        ]
     };
 
     handleChooseOrganizations = () => {
         this.setState({
             names: this.organizationsNames,
-            currentPage: 1
         })
     };
 
     handleChooseFoundations = () => {
         this.setState({
             names: this.foundationsNames,
-            currentPage: 1
         })
     };
 
     handleChooseLocalOrg = () => {
         this.setState({
             names: this.localOrgNames,
-            currentPage: 1
         })
     };
 
