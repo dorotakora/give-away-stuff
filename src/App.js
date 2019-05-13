@@ -1,26 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './Header';
+import Info from './Info';
+import Steps from './Steps';
+import About from './About';
+import Organizations from './Organizations';
+import Footer from './Footer';
+import './css/main.scss';
+import {HashRouter as Router} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+    render() {
+        return (<>
+            <Router basename={process.env.PUBLIC_URL}>
+            <Header path='/' exact component={Header}/>
+        </Router>
+        <Info
+        title="info"
+        dark={true}
+        id="info"
+            />
+            <Steps title="steps"
+        dark={true}
+        id="steps"
+            />
+            <About title="about"
+        dark={true}
+        id="about"
+            />
+            <Organizations title="organizations"
+        dark={true}
+        id="organizations"
+            />
+            <Footer  title="footer"
+        dark={true}
+        id="footer"
+            />
+            </>)
+    }
 }
-
 export default App;
+
