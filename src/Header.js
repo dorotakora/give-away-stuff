@@ -7,7 +7,8 @@ import {Link, Route} from "react-router-dom";
 
   class Header extends React.Component{
       state = {
-        isActive: false
+        isActive: false,
+        headerShow: false
       };
 
       scrollToTop = () => {
@@ -17,17 +18,36 @@ import {Link, Route} from "react-router-dom";
           scroll.scrollToBottom();
       };
 
+      componentDidMount() {
+          window.addEventListener('scroll', this.handleScroll);
+      }
+
+      handleScroll = () => {
+          if(window.scrollY > 0) {
+              this.setState({
+                  headerShow: true
+              })
+          }else {
+              this.setState({
+                  headerShow: false
+              })
+          }
+      };
+
       render() {
+
           return <>
               <div className={'header'}>
                   <div className={'header__right'}>
-                      <ul className={'header__log'}>
+                      <ul className={'header__log'}
+                          id={this.state.headerShow ? 'scrollNav' : ''}>
                           <li><Link to={"/login"}>Zaloguj</Link></li>
                           <li><Link to={"/register"}>Załóż konto</Link></li>
                       </ul>
                       <Route path="/login" component={Login}/>
                       <Route path="/register" component={Register}/>
-                      <nav className={'header__menu'}  id="navbar" >
+                      <nav className={'header__menu'}
+                           id={this.state.headerShow ? 'scrollNav' : ''}>
                           <i className="fas fa-angle-double-up" onClick={this.scrollToTop}/>
                           <ul className ="nav-items">
                               <li className="nav-item">
@@ -36,7 +56,7 @@ import {Link, Route} from "react-router-dom";
                                   to="info"
                                   spy={true}
                                   smooth={true}
-                                  offset={0}
+                                  offset={-120}
                                   duration= {500}>Start</LinkTo></li>
                               <li className="nav-item">
                                   <LinkTo
@@ -44,32 +64,34 @@ import {Link, Route} from "react-router-dom";
                                   to="steps"
                                   spy={true}
                                   smooth={true}
-                                  offset={0}
+                                  offset={-130}
                                   duration= {500}>O co chodzi?</LinkTo></li>
                               <li className="nav-item"><LinkTo
                                   activeClass="active"
                                   to="about"
                                   spy={true}
                                   smooth={true}
-                                  offset={0}
+                                  offset={-110}
                                   duration= {500}>O nas</LinkTo></li>
                               <li className="nav-item"><LinkTo
                                   activeClass="active"
                                   to="organizations"
                                   spy={true}
                                   smooth={true}
-                                  offset={0}
+                                  offset={-100}
                                   duration= {500}>Fundacje i organizacje</LinkTo></li>
                               <li className="nav-item"><LinkTo
                                   activeClass="active"
                                   to="footer"
                                   spy={true}
                                   smooth={true}
-                                  offset={0}
+                                  offset={-100}
                                   duration= {500}>Kontakt</LinkTo></li>
                           </ul>
                           <i className="fas fa-angle-double-down" onClick={this.scrollToBottom}/>
                       </nav>
+                  </div>
+
 
                       <div className={'header__info'}>
                           <p>Zacznij pomagać!</p>
@@ -80,7 +102,7 @@ import {Link, Route} from "react-router-dom";
                               <button>Zorganizuj zbiórkę</button>
                           </div>
                       </div>
-                  </div>
+
               </div>
           </>
       }
