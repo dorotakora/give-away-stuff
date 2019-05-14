@@ -23,8 +23,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/css/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="584">
-                  <caret line="439" column="31" lean-forward="true" selection-start-line="439" selection-start-column="31" selection-end-line="439" selection-end-column="31" />
+                <state relative-caret-position="136">
+                  <caret line="423" column="12" selection-start-line="423" selection-start-column="12" selection-end-line="423" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -163,18 +163,17 @@
       <workItem from="1557814943154" duration="2240000" />
       <workItem from="1557828155891" duration="75000" />
       <workItem from="1557836126470" duration="7512000" />
-      <workItem from="1557853610655" duration="1617000" />
+      <workItem from="1557853610655" duration="1893000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23939000" />
+    <option name="totallyTimeSpent" value="24215000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1757" y="39" width="2048" height="1471" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1580247" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1580247" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -186,7 +185,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.19503012" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.19503012" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -278,8 +277,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="439" column="31" lean-forward="true" selection-start-line="439" selection-start-column="31" selection-end-line="439" selection-end-column="31" />
+        <state relative-caret-position="136">
+          <caret line="423" column="12" selection-start-line="423" selection-start-column="12" selection-end-line="423" selection-end-column="12" />
         </state>
       </provider>
     </entry>
