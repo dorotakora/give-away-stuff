@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import decoration from './images/decoration.png';
+import decoration from '../images/decoration.png';
 
-class Login extends React.Component{
+class LogIn extends React.Component{
 
     render() {
         return <div id={'login'}>
@@ -24,4 +24,4 @@ class Login extends React.Component{
         </div>
     }
 }
-export default Login;
+export default LogIn;

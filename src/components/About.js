@@ -1,7 +1,7 @@
 import React from 'react';
-import about from './images/about.jpg';
-import signature from './images/signature.png';
-import  decoration from './images/decoration.png';
+import about from '../images/about.jpg';
+import signature from '../images/signature.png';
+import  decoration from '../images/decoration.png';
 
 
 class About extends React.Component {

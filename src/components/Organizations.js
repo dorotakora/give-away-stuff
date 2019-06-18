@@ -1,6 +1,6 @@
 import React from 'react';
 import Pagination from './Pagination';
-import  decoration from './images/decoration.jpg';
+import  decoration from '../images/decoration.jpg';
 
 class Organizations extends React.Component {
 

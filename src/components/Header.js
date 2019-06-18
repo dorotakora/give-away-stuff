@@ -1,9 +1,8 @@
 import React from 'react';
-import Login from './Login';
-import Register from './Register';
-import  decoration from './images/decoration.jpg';
+import  decoration from '../images/decoration.jpg';
 import { Link as LinkTo, animateScroll as scroll } from "react-scroll";
-import {Link, Route} from "react-router-dom";
+import {Link} from "react-router-dom";
+import * as ROUTES from '../constants/routes';
 
   class Header extends React.Component{
       state = {
@@ -41,11 +40,9 @@ import {Link, Route} from "react-router-dom";
                   <div className={'header__right'}>
                       <ul className={'header__log'}
                           id={this.state.headerShow ? 'scrollNav' : ''}>
-                          <li><Link to={"/login"}>Zaloguj</Link></li>
-                          <li><Link to={"/register"}>Załóż konto</Link></li>
+                          <li><Link to={ROUTES.SIGN_IN}>Zaloguj</Link></li>
+                          <li><Link to={ROUTES.SIGN_UP}>Załóż konto</Link></li>
                       </ul>
-                      <Route path="/login" component={Login}/>
-                      <Route path="/register" component={Register}/>
                       <nav className={'header__menu'}
                            id={this.state.headerShow ? 'scrollNav' : ''}>
                           <i className="fas fa-angle-double-up" onClick={this.scrollToTop}/>
@@ -91,8 +88,6 @@ import {Link, Route} from "react-router-dom";
                           <i className="fas fa-angle-double-down" onClick={this.scrollToBottom}/>
                       </nav>
                   </div>
-
-
                       <div className={'header__info'}>
                           <p>Zacznij pomagać!</p>
                           <p>Oddaj niechciane rzeczy w zaufane ręce</p>

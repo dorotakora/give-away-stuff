@@ -1,9 +1,9 @@
 import React from 'react';
-import  decoration from './images/decoration.jpg';
-import lightbulb from './images/light-bulb.png';
-import product from './images/product.png';
-import skills from './images/skills.png';
-import deliverytruck from './images/delivery-truck.png';
+import  decoration from '../images/decoration.jpg';
+import lightbulb from '../images/light-bulb.png';
+import product from '../images/product.png';
+import skills from '../images/skills.png';
+import deliverytruck from '../images/delivery-truck.png';
 
     class Steps extends React.Component {
         render() {
