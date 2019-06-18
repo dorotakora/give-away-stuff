@@ -15,5 +15,25 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDSgtlLeNZrXtmELIh4-3ndNcwOk1hghlw",
+        authDomain: "give-away-stuff.firebaseapp.com",
+        databaseURL: "https://give-away-stuff.firebaseio.com",
+        projectId: "give-away-stuff",
+        storageBucket: "give-away-stuff.appspot.com",
+        messagingSenderId: "801401665311",
+        appId: "1:801401665311:web:f6bb30cfd86f9e03"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
   </body>
 </html>

@@ -70,12 +70,14 @@ class SignInFormBase extends Component{
                     type="password"
                     placeholder="Hasło"
                 />
-            </label>
+            </label>npm run build
+
 
             <p>Przypomnij hasło</p>
             <div>
                 <button><Link to={ROUTES.SIGN_UP}>Załóż konto</Link></button>
                 <button disabled={isInvalid} type="submit">Zaloguj się</button>
+                {error && <p>{error.message}</p>}
             </div>
             <div className={'log__links'}><Link to={ROUTES.HEADER}>Powrót do strony głównej</Link></div>
         </form>
