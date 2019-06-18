@@ -420,9 +420,6 @@ img[alt='people picture'] {
 
 #login,
 #register {
-    position: fixed;
-    top: 133px;
-    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -445,6 +442,10 @@ img[alt='people picture'] {
             outline: none;
             cursor: pointer;
             padding: 10px;
+            a {
+                text-decoration: none;
+                color: #000;
+            }
         }
     }
     label, input {
