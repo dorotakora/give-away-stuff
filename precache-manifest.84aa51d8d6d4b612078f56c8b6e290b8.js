@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4059e4262a6741cf5540ff692343a9b7",
+    "revision": "f9a7a6c322e960568a75f37919a20005",
     "url": "/give-away-stuff/index.html"
   },
   {
-    "revision": "ee69094eb60c830003b4",
-    "url": "/give-away-stuff/static/css/main.104416d0.chunk.css"
+    "revision": "7b6a94dd785b8fe09d73",
+    "url": "/give-away-stuff/static/css/main.439879f0.chunk.css"
   },
   {
-    "revision": "030537e689020cfcff89",
-    "url": "/give-away-stuff/static/js/2.74ad7aaf.chunk.js"
+    "revision": "69760be751a843db2488",
+    "url": "/give-away-stuff/static/js/2.1e4fa099.chunk.js"
   },
   {
-    "revision": "ee69094eb60c830003b4",
-    "url": "/give-away-stuff/static/js/main.585887cd.chunk.js"
+    "revision": "7b6a94dd785b8fe09d73",
+    "url": "/give-away-stuff/static/js/main.8587aeaf.chunk.js"
   },
   {
     "revision": "4827a9c5140779678715",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "74c241482c275f28baa081947a4616db",
     "url": "/give-away-stuff/static/media/footer_bg_img.74c24148.jpg"
+  },
+  {
+    "revision": "85c98296eeecd76a9bf40cb6c5827b20",
+    "url": "/give-away-stuff/static/media/header_logged_img.85c98296.jpg"
   },
   {
     "revision": "2c60c6fe9605a0b26170b834fdc6244f",
