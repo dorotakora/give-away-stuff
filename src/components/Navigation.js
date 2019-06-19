@@ -20,9 +20,9 @@ const NavigationAuth = () => {
             {/*<li>*/}
             {/*    <SignOutButton/>*/}
             {/*</li>*/}
-            <li>
-                <Link to={ROUTES.HOME}/>
-            </li>
+            {/*<li>*/}
+            {/*    <Link to={ROUTES.HOME}/>*/}
+            {/*</li>*/}
             {/*<li>*/}
             {/*    <Link to={ROUTES.ACCOUNT}>Account</Link>*/}
             {/*</li>*/}

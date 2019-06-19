@@ -23,7 +23,9 @@ class Home extends Component {
 
         this.state = {
             isActive: false,
-            headerShow: false
+            headerShow: false,
+            isChecked: false,
+            value: ''
         };
     }
 
@@ -51,11 +53,23 @@ class Home extends Component {
             }
         };
 
-        render() {
+    handleCheckboxChange = (e) => {
+        this.setState({
+            isChecked: e.target.checked,
+            [e.target.name]: e.target.value
+        });
+    }
 
-            return <>
-                <div>
+
+    render() {
+
+            return <div>
+                <div className={'header_signin'}>
                     <div className={'header__right'}>
+                        <ul className={'header__log'}
+                            id={this.state.headerShow ? 'scrollNav' : ''}>
+                            <p>Witaj</p>
+                        </ul>
                         <nav className={'header__menu'}
                              id={this.state.headerShow ? 'scrollNav' : ''}>
                             <i className="fas fa-angle-double-up" onClick={this.scrollToTop}/>
@@ -134,9 +148,43 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
-
                 </div>
-            </>
+                <div className={"header__warning"}>
+                    <h3>Ważne!</h3>
+                    <p>Uzupełnij szczegóły dotyczące Twoich rzeczy.Dzięki temu będziemy widzieć komu najlepiej je przekazać</p>
+                </div>
+                <form className={'header__form'}>
+                    <p>Krok 1/4</p>
+                    <h3>Zaznacz co chcesz oddać:</h3>
+                    <label className="container">
+                            <input type="checkbox" name={'optiona'} onClick={this.handleCheckboxChange}
+                                   value={this.state.value}/>
+                        <span className="checkmark"></span>
+                        ubrania, które nadają sie do ponownego użycia
+                    </label>
+                    <label className="container">
+                        <input type="checkbox" name={'optionb'} onClick={this.handleCheckboxChange} value={this.state.value}/>
+                        <span className="checkmark"></span>
+                        ubrania, do wyrzucenia
+                    </label>
+                    <label className="container">
+                        <input type="checkbox" name={'optionc'} onClick={this.handleCheckboxChange} value={this.state.value}/>
+                        <span className="checkmark"></span>
+                        zabawki
+                    </label>
+                    <label className="container">
+                        <input type="checkbox" name={'optiond'} onClick={this.handleCheckboxChange} value={this.state.value}/>
+                        <span className="checkmark"></span>
+                        książki
+                    </label>
+                    <label className="container">
+                        <input type="checkbox" name={'optione'} onClick={this.handleCheckboxChange} value={this.state.value}/>
+                        <span className="checkmark"></span>
+                        inne
+                    </label>
+                    <button type={"button"}>Dalej</button>
+                </form>
+            </div>
         }
     }
 
