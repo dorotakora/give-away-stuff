@@ -27,7 +27,6 @@ class SignUpFormBase extends React.Component{
     constructor(props) {
         super(props);
         this.state = { ...INITIAL_STATE };
-        this.props.history.push(ROUTES.SIGN_UP)
     }
 
 
@@ -37,6 +36,7 @@ class SignUpFormBase extends React.Component{
         this.props.firebase.doCreateUserWithEmailAndPassword(email, passwordOne)
             .then(authUser => {
                 this.setState({ ...INITIAL_STATE});
+                this.props.history.push(ROUTES.HEADER);
             })
             .catch(error => {
                 this.setState({error})

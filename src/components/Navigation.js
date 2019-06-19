@@ -1,7 +1,11 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, Route} from 'react-router-dom';
 import * as ROUTES from '../constants/routes.js';
 import SignOutButton from './SignOut';
+import Header from "./Header";
+import SignUpPage from "./SignUp";
+import SignInPage from "./SignIn";
+
 
 const Navigation = ({authUser}) => (
     <div>{authUser ? <NavigationAuth/> : <NavigationNonAuth/>}</div>
@@ -13,15 +17,18 @@ const NavigationAuth = () => {
             {/*<li>*/}
             {/*    <Link to={ROUTES.LANDING}>Landing</Link>*/}
             {/*</li>*/}
+            {/*<li>*/}
+            {/*    <SignOutButton/>*/}
+            {/*</li>*/}
             <li>
-                <Link to={ROUTES.HOME}>Home</Link>
+                <Link to={ROUTES.HOME}/>
             </li>
-            <li>
-                <Link to={ROUTES.ACCOUNT}>Account</Link>
-            </li>
-            <li>
-                <SignOutButton/>
-            </li>
+            {/*<li>*/}
+            {/*    <Link to={ROUTES.ACCOUNT}>Account</Link>*/}
+            {/*</li>*/}
+            {/*<li>*/}
+            {/*<Route exact path={ROUTES.HEADER} component={Header}/>*/}
+            {/*</li>*/}
         </ul>
     );
 };
@@ -29,12 +36,12 @@ const NavigationAuth = () => {
 const NavigationNonAuth = () => {
     return (
         <ul>
+
             <li>
                 <Link to={ROUTES.HEADER}/>
             </li>
-            {/*<li>*/}
-            {/*    <Link to={ROUTES.SIGN_IN}>Sign In</Link>*/}
-            {/*</li>*/}
+            {/*<Route path={ROUTES.SIGN_UP} component={SignUpPage}/>*/}
+            {/*<Route path={ROUTES.SIGN_IN} component={SignInPage}/>*/}
         </ul>
     );
 };
