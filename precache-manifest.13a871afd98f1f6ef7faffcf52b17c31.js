@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f9a7a6c322e960568a75f37919a20005",
+    "revision": "7592e1603212f416341f3778256ebfae",
     "url": "/give-away-stuff/index.html"
   },
   {
-    "revision": "7b6a94dd785b8fe09d73",
-    "url": "/give-away-stuff/static/css/main.439879f0.chunk.css"
+    "revision": "f27966eebd60162e7a7c",
+    "url": "/give-away-stuff/static/css/main.c54babf7.chunk.css"
   },
   {
-    "revision": "69760be751a843db2488",
-    "url": "/give-away-stuff/static/js/2.1e4fa099.chunk.js"
+    "revision": "262edbf04ffb9ac9cc79",
+    "url": "/give-away-stuff/static/js/2.21e6a619.chunk.js"
   },
   {
-    "revision": "7b6a94dd785b8fe09d73",
-    "url": "/give-away-stuff/static/js/main.8587aeaf.chunk.js"
+    "revision": "f27966eebd60162e7a7c",
+    "url": "/give-away-stuff/static/js/main.bc109527.chunk.js"
   },
   {
     "revision": "4827a9c5140779678715",
@@ -50,5 +50,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8d278327895320b5a68810bfe175700c",
     "url": "/give-away-stuff/static/media/skills.8d278327.png"
+  },
+  {
+    "revision": "3de513ba171aef5af1c913b3b60961ea",
+    "url": "/give-away-stuff/static/media/teddy-bear.3de513ba.jpg"
   }
 ]);
