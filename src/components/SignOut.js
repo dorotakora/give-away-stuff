@@ -13,7 +13,7 @@ const SignOutButton = ({firebase}) =>
                     fontSize: '16px',
                     textAlign: 'right',
         }}>
-        <Link to={ROUTES.HEADER} style={{fontSize: '16px',}}>Wyloguj</Link>
+        <Link to={ROUTES.HEADER} style={{fontSize: '16px'}}>Wyloguj</Link>
         </button>
     );
 

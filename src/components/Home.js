@@ -68,7 +68,6 @@ class Home extends Component {
                     <div className={'header__right'}>
                         <ul className={'header__log'}
                             id={this.state.headerShow ? 'scrollNav' : ''}>
-                            <p>Witaj</p>
                         </ul>
                         <nav className={'header__menu'}
                              id={this.state.headerShow ? 'scrollNav' : ''}>
@@ -151,7 +150,7 @@ class Home extends Component {
                 </div>
                 <div className={"header__warning"}>
                     <h3>Ważne!</h3>
-                    <p>Uzupełnij szczegóły dotyczące Twoich rzeczy.Dzięki temu będziemy widzieć komu najlepiej je przekazać</p>
+                    <p>Uzupełnij szczegóły dotyczące Twoich rzeczy. Dzięki temu będziemy widzieć komu najlepiej je przekazać.</p>
                 </div>
                 <form className={'header__form'}>
                     <p>Krok 1/4</p>
@@ -159,31 +158,32 @@ class Home extends Component {
                     <label className="container">
                             <input type="checkbox" name={'optiona'} onClick={this.handleCheckboxChange}
                                    value={this.state.value}/>
-                        <span className="checkmark"></span>
+                        <span className="checkmark"/>
                         ubrania, które nadają sie do ponownego użycia
                     </label>
                     <label className="container">
                         <input type="checkbox" name={'optionb'} onClick={this.handleCheckboxChange} value={this.state.value}/>
-                        <span className="checkmark"></span>
+                        <span className="checkmark"/>
                         ubrania, do wyrzucenia
                     </label>
                     <label className="container">
                         <input type="checkbox" name={'optionc'} onClick={this.handleCheckboxChange} value={this.state.value}/>
-                        <span className="checkmark"></span>
+                        <span className="checkmark"/>
                         zabawki
                     </label>
                     <label className="container">
                         <input type="checkbox" name={'optiond'} onClick={this.handleCheckboxChange} value={this.state.value}/>
-                        <span className="checkmark"></span>
+                        <span className="checkmark"/>
                         książki
                     </label>
                     <label className="container">
                         <input type="checkbox" name={'optione'} onClick={this.handleCheckboxChange} value={this.state.value}/>
-                        <span className="checkmark"></span>
+                        <span className="checkmark"/>
                         inne
                     </label>
                     <button type={"button"}>Dalej</button>
                 </form>
+                <div className={"header__img"}/>
             </div>
         }
     }

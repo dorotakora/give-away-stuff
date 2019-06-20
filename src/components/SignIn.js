@@ -5,6 +5,7 @@ import decoration from '../images/decoration.png';
 
 import { withFirebase } from '../Firebase';
 import * as ROUTES from '../constants/routes';
+import {PasswordForgetLink} from "./PasswordForget";
 
 const SignInPage = () => (
     <div>
@@ -71,7 +72,7 @@ class SignInFormBase extends Component{
                     placeholder="Hasło"
                 />
             </label>
-            <p>Przypomnij hasło</p>
+           <PasswordForgetLink/>
             <div>
                 <button><Link to={ROUTES.SIGN_UP}>Załóż konto</Link></button>
                 <button disabled={isInvalid} type="submit">Zaloguj się</button>
